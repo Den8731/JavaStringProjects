@@ -1,14 +1,21 @@
-import java.util.Random;
+import com.cherish.StringsProjects.StringManips;
+import com.cherish.StringsProjects.StringPosition;
 
 public static void main(String[] args){
+    String someText = "North Carolina";
 
-    RandomTextGenerator newText = new RandomTextGenerator();
-    RandomTextGenerator extract = new RandomTextGenerator();
+    StringPosition position = new StringPosition();
+    StringPosition extraction = new StringPosition();
 
-    String someText = "supercalifragilisticexpialidocious";
-    newText.randomNameGenerator(someText);
+    //Instantiating object from class StringManips
+    StringManips manipStr = new StringManips();
+    manipStr.extractAndInsert(someText);
 
-        extract.LetterExtractor(someText);
+
+//    position.getStringPosition(someText);
+//        writeResult.writeResultToFile(someText);
+
+
+
 
 }
-
